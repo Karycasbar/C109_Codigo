@@ -35,13 +35,13 @@ height  = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 		print("Distancia: ", distance)
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-        print("Tamaño de la pantalla de la computadora: ",screen_width, screen_height, " Tamaño de la ventana del output: ", width, height)
-        print("Posición del mouse: ", mouse.position, "Posición del centro de la línea de las puntas: ", center_x, center_y)
+		print("Tamaño de la pantalla de la computadora: ",screen_width, screen_height, " Tamaño de la ventana del output: ", width, height)
+		print("Posición del mouse: ", mouse.position, "Posición del centro de la línea de las puntas: ", center_x, center_y)
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-        relative_mouse_x = (center_x/width)*screen_width
-        relative_mouse_y = (center_y/height)*screen_height
+		relative_mouse_x = (center_x/width)*screen_width
+		relative_mouse_y = (center_y/height)*screen_height
         
-        mouse.position = (relative_mouse_x, relative_mouse_y)
+		mouse.position = (relative_mouse_x, relative_mouse_y)
 -----------------------------------------------------------------------------------------
 		if distance > 40:
 			if pinch == True:
