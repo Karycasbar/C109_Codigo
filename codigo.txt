@@ -18,13 +18,13 @@ height  = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
                 print("Adelantar")
                 keyboard.press(Key.right)        
 --------------------------------------------------------------------
-        finger_tip_x = int((landmarks[8].x)*width)
-        finger_tip_y = int((landmarks[8].y)*height)
+		finger_tip_x = int((landmarks[8].x)*width)
+		finger_tip_y = int((landmarks[8].y)*height)
 
-        thumb_tip_x = int((landmarks[4].x)*width)
-        thumb_tip_y = int((landmarks[4].y)*height)
+		thumb_tip_x = int((landmarks[4].x)*width)
+		thumb_tip_y = int((landmarks[4].y)*height)
 
-        cv2.line(image, (finger_tip_x, finger_tip_y),(thumb_tip_x, thumb_tip_y),(255,0,0),2)
+		cv2.line(image, (finger_tip_x, finger_tip_y),(thumb_tip_x, thumb_tip_y),(255,0,0),2)
 ---------------------------------------------------------------------------------------------------------
         center_x = int((finger_tip_x + thumb_tip_x )/2)
         center_y = int((finger_tip_y + thumb_tip_y )/2)
