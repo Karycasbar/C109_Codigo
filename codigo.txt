@@ -43,15 +43,15 @@ height  = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         
         mouse.position = (relative_mouse_x, relative_mouse_y)
 -----------------------------------------------------------------------------------------
-        if distance > 40:
-            if pinch == True:
-                pinch = False           
-                mouse.release(Button.left)
+		if distance > 40:
+			if pinch == True:
+				pinch = False			
+				mouse.release(Button.left)
 
-        if distance <= 40 :
-            if(pinch==False):
-                pinch=True
-                mouse.press(Button.left)
+		if distance <= 40 :
+			if(pinch==False):
+				pinch=True
+				mouse.press(Button.left)
 -------------------------------------------------------------------
 
 
